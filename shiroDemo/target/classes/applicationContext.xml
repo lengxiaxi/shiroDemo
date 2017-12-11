@@ -123,10 +123,11 @@
         	3). logout 登出.
         	4). roles 角色过滤器
         -->
-        <!--  
+          
         <property name="filterChainDefinitions">
             <value>
                 /login.jsp = anon
+                /test.jsp = anon
                 /shiro/login = anon
                 /shiro/logout = logout
                 
@@ -137,7 +138,7 @@
                 /** = authc
             </value>
         </property>
-        -->
+        
     </bean>
     
     <!-- 配置一个 bean, 该 bean 实际上是一个 Map. 通过实例工厂方法的方式 -->
